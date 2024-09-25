@@ -12,7 +12,7 @@ var num2 = 10;
 console.log(num1 + num2);
 console.log(age);
 
-// javascript is loosely typed lan, bcz in this type dynamically assigns
+// javascript is loosely typed lan, bcz in this 'datatype' dynamically assigns
 
 age = "Inshal";
 console.log(age);
@@ -41,7 +41,79 @@ if(true)
 }
 
 // but as we know var (scope is Global) so it will print it outsilde the if block also
-//console.log(name); // so we can say it as deprecated usage, you can also see a line on(name) it
+//console.log(name); // so we can say it as deprecated usage, you can also see a line on(name) it (uncomment to see the line one name)
+// we can also change the value of name in console which further shows that it is global
 
 
- 
+
+// ............................ let ....................................
+
+// 'let' is same as 'var' but the only difference is that 'let' scope is local
+
+let age2 = 23;
+console.log(age2);
+age2= "InshalR"
+console.log(age2);
+
+if (true)
+{
+    let a=43;
+    console.log(a);
+}
+//console.log(a); // it will generate an error bcz 'let' scope is local and the 'a' can be printed only in the if block bcz it's scope is local.
+// if you want to choose b/w 'let' and 'var' then recommeded is 'let'
+
+c=45;
+console.log(c);
+ // and now see no keyword before c and still c is printing. so by default c is global
+
+ // note:
+ // let,var & const are keywords and not data types it gives only scope and some constraints to the variables defined
+
+// .............................. const ...........................
+
+// two functions of const
+// 1- value assigned to const variable cannot be changed
+// 2- const scope is local
+// 3- a value must be assigned to const variable
+
+
+const var1=34;
+//var1=45; // will generate an error that it cannot be changed.
+console.log(var1);
+
+//const var2; // it will generate an error that a value must be assigned to const
+// but if it was 'let' or 'var' they will not generate any error.
+
+let var2;
+console.log(var2); // it will not generate an error but will show undefined in console of live server
+// but if do this that var2 = 34;
+
+var2= 35;
+console.log(var2); // it will be printed successfully
+
+//......................... 
+
+// summary
+
+// var - global
+// Re-assign
+// can be accessed every where
+
+// let - local
+// Re-assign
+// only accessed in a block
+
+// const - local
+// cannot be Re-assigned
+// only accessed in a block
+
+
+
+
+
+
+
+
+
+
