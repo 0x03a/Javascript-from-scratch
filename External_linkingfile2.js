@@ -1,0 +1,1 @@
+console.log(" Hello from external linking file2 .js")

@@ -1,0 +1,4 @@
+In Javascript we can use 3 types of variables
+-> var
+-> let
+-> const
