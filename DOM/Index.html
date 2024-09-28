@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="DOM.js">
+            </script>
+        
+            <script> // internal linking (writing javasrcipt code)
+               // reading before this read DOM.js
+                alert("Hello I am Inshal") // if you want to show user alert you can use this function
+                // if you want input then you can use prompt
+                const value = prompt( " what's your name ", "Inshal")
+                console.log(value) // this output will be shown in console tab (in inspect)
+                // now window (we call our browser as window)
+                console.log(window)
+                console.log("Inshal"); // now it is by default windows
+                // now you will be thinking what does this means by default windows, see below
+                window.console.log("Inshal") // now it will also show "Inshal" on the console tab
+                // so by default console.log is runned by windows and we don't have to write it before it
+                // When ever we interact with browser we interact with the help of this windows
+                // like for example
+               // window.alert("window alert")
+               // window.prompt("enter some text", "window.prompt")
+                
+                // now doucment object (with the help of it we can see our whole code and make changes init)
+                window.console.log(window.document) // now this will show all your code
+                // now with the help of document you can access your code
+                console.log(document.title)
+                document.title="Inshal"
+                
+                // basically we use 'document' to interact with the DOM
+                
+                console.log(document.body)
+                document.write("Your website is hacked ") // for debugging purpose
+                const val1= prompt("Enter name","Inshal")
+                document.write("Hello" + val1)
+                // You should study documentation for javascript
+                // I would highly recommend mdn doc
+            </script>
+    <h1> DOM</h1>
+</body>
+</html>
