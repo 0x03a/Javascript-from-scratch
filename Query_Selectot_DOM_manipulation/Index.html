@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM - Query Selector</title>
+</head>
+<body>
+    <nav class="block">
+        <h4>
+            Hey there my name is <span id="username">Inshal
+            <!--  <h1> hello bro</h1>
+ -->              </span>
+        </h4>
+        <p class="paragraph"> Welcome to my website
+            
+        </p>
+        
+    </nav>
+    <div class="block">
+       <!-- <h4>
+            Hey there my name is <span id="username">Inshal
+              <h1> hello bro</h1>
+               </span>
+        </h4>
+    -->
+    
+        <p class="paragraph"> Here is a code for you</p>
+        <pre><code>console.log('Hey there')</code></pre>
+    </div>
+    <div>
+        <div>
+            <h3>This is div2</h3>
+        </div>
+    </div>
+    <script>
+        // query selector ( In today's work we will see how to access and manilpulate these elements using JAVASCRIPT)
+        /*
+           selectors (means that how can a element be selected)
+           - tag name
+           - id # (we use # for id in CSS)
+           - class . (we can also access the elements using class by dot operator)
+
+        */
+
+        // let's say I have to select my body tag in jAVAscript
+        const body=document.querySelector('body')
+      //   console.log(body)
+      //   body.innerHTML= "<h1>HACKED!!</h1>" // now it will remove all the previous code of body and added this code in the body
+
+      // so now I don't have to body.innerHTML, but I want to know what it is
+     // console.log(body.innerHTML) // It will return you a string in which your whole code is
+
+     // now I can select any tag
+     const div = document.querySelector('div')
+    // div.innerHTML="<h1>HACKED!!</h1>" // so we say this DOM manipulation bcz we are changing this
+
+     // now I am making another div tag (div2), see what happens
+     // now what happens is that the query selector selected the first div not the 2nd one
+     // so it is same for all elements, that imagine if there were two nav tag one after the another so it will first nav tag not the second one
+     // so query selector select always first element
+
+     // now you have a small assignment
+     /*
+        now you have to chnange the below code
+             " <code>console.log('Hey there')</code> "
+        using javascript
+
+     */
+    /* Solution
+     const code = document.querySelector('code')
+    code.innerHTML="console.log('Code changed')"
+    */
+
+    // Now id #
+
+    // note: ALL the DOM has only one id
+
+    const username= document.querySelector('#username')
+//    console.log(username.HTML) // now we don't have inner HTML in span, that's why it is displaying undefined
+// now then we will use this
+ //  console.log(username.innerText) // it will display you the text
+ //  username.innerText="INSHALR" // if you write here HTML code then it will have no affect bcz 'innerText' will treat it as text
+   // we can also do this
+//   username.innerHTML="<h1> RRINSHALRR <h1>" means we can also write HTML code init in replace of text
+
+    /* note: if you have used double id in you DOM it will display warning
+     or if does not display warning then remember it will select only first element(id)
+    */
+
+    // now class .
+
+    const Elementt= document.querySelector(".block")
+ //  console.log(Elementt) // it will show you the whole block in the tag where it is applied
+
+  const Elementt2= document.querySelector(".paragraph")
+  console.log(Elementt2) // same for it
+  console.log(Elementt2.innerHTML) 
+
+  // now what is children
+  //const tag= document.querySelector('div')
+  //console.log(tag.children) // it will display you the tags inside 'div' which are called children of it
+  //console.log(tag.parentElement) // now the parent of 'div' tag is 'body'
+  //console.log(tag.parentElement.children) // we can say it as element parent children
+
+  const tag2= document.querySelectorAll('div')
+  console.log(tag2) // it will return array an of div
+
+  const ele= document.querySelectorAll('.block')
+  console.log(ele)
+
+  // now what we can apply on it (foreach method()
+  ele.forEach((e)=> {
+    console.log(e.innerHTML) // it will display all the block 
+  }
+  
+)
+    </script>
+
+
+</body>
+</html>
