@@ -1,4 +1,4 @@
-# JAVASCRIPT from Scratch
+## JavaScript Development in Progress
 
 - Working from scratch to advanced JavaScript concepts.
 - Using Visual Studio Code as the main development tool.
